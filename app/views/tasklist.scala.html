@@ -1,0 +1,16 @@
+
+@* TaskList.scala.html *@
+
+@(tasks: Seq[String])
+
+@main("Task List") {
+
+    <h1>Task List</h1>
+
+    <ul>
+        @for(task <- tasks) {
+            <li>@task</li>
+        }
+    </ul>
+
+}
