@@ -11,4 +11,6 @@ GET     /assets/*file               controllers.Assets.versioned(path="/public",
 
 # User Registration Routes
 
-GET     /taskList                   controllers.TaskList.tasklist()
+GET     /taskList                   controllers.TaskListC.tasklist()
+GET     /login                      controllers.TaskListC.login()
+GET     /validateLogin              controllers.TaskListC.validateLogin(username, password)
